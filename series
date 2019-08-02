@@ -1,0 +1,33 @@
+#include <stdio.h>
+int n=8;
+int val;
+int x;
+
+int main()
+{
+    if (n%2==1)
+    {
+       n=(n/2)+1;
+       printf("%d \n",n);
+       val = 1;
+       while ((n-1) != 0)
+        {
+        val = 2 * val;
+        --n;
+        }
+        val = 1*val;
+       printf("%d",val);
+    }
+    else
+    {
+        n=n/2;
+        val =1 ;
+        while((n-1)!=0)
+        {
+            val = 3*val;
+            --n;
+        }
+        val =1*val;
+        printf("%d",val);
+    }
+}
